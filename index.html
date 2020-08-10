@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>포트폴리오 </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1><a href="#"><img src="images/logo.jpg" alt="portfolio"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                   <li><a href="#">ABOUT</a>
+                       <ul class="submenu">
+                            <li><a herf="#">Skill</a></li>
+                            <li><a herf="#">Certificate</a></li>
+                            <li><a herf="#">Contest</a></li>
+                            <li><a herf="#">MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">DESIGN</a> 
+                        <ul class="submenu">
+                            <li><a herf="#">Illustration Work</a></li>
+                            <li><a herf="#">Editing Design</a></li>
+                            <li><a herf="#">App Design</a></li>
+                            <li><a herf="file:///Users/3-1T/Desktop/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB/index.html">Web Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">VIDEO</a> 
+                        <ul class="submenu">
+                            <li><a herf="#">Award</a></li>
+                            <li><a herf="#">Vlog</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">SNS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- //header -->
+        <section id="banner">
+            <div class="slideList">
+            <div class="slideImg">
+                <img src="images/banner01.jpg" alt="해리포터">
+            </div>
+            <div class="slideImg">
+                <img src="images/banner02.jpg" alt="맥 이벤트페이지">
+            </div>
+            <div class="slideImg">
+                <img src="images/banner03.jpg" alt="스노우볼">
+            </div>
+            </div>
+        </section>
+
+   <!-- //banner -->
+        <section id="contents"> 
+            <img src="images/contents.jpg" alt="명언">
+        
+        </section>
+       <!-- //contents -->
+
+        <section id="mockup" class="clearfix">
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/01.jpg" alt="어복쟁반">
+                    <figcaption>
+                        제품 인트로페이지
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/02.jpg" alt="어복쟁반">
+                    <figcaption>
+                    어플'스쿨유니홈' 판넬
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/03.jpg" alt="어복쟁반">
+                    <figcaption>
+                    MAC cosmetics 이벤트페이지
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/04.jpg" alt="어복쟁반">
+                    <figcaption>
+                        제품 상세페이지 
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/05.jpg" alt="어복쟁반">
+                    <figcaption>
+                    어플 '해리포터 퀴즈' 
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/06.jpg" alt="어복쟁반">
+                    <figcaption>
+                    어플 'NETFLIX' 플렉서블
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/07.jpg" alt="어복쟁반">
+                    <figcaption>
+                        유튜브영상 썸네일
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/08.jpg" alt="어복쟁반">
+                    <figcaption>
+                    인물 일러스트
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/09.jpg" alt="어복쟁반">
+                    <figcaption>
+                    코로나19 학교생활 카드뉴스
+                    </figcaption>
+                </figure>
+            </div>
+            </section>
+                                 
+                
+            
+            
+            <footer id="footer" class="clearfix">
+                <h2><img src="images/logo4-01.png" alt="로고"></h2>
+                <div class="foot">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">사업자 정보확인</a></li>
+                    </ul>
+                    <address>
+                        한강미디어고등학교 김예담 <br>
+                        주소: 서울시 강서구 양천로14가길 23 <br>
+                    </address>
+                </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+          $(this).find(".submenu").stop().slideDown(200);
+          });
+        $(".nav > ul > li").mouseout(function(){
+          $(this).find(".submenu").stop().slideUp(200);
+          });
+        
+      //이미지 슬라이드(좌우)
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+    },3000);
+        
+        
+
+        
+    </script>
+    
+</body>
+</html>
